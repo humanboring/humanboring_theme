@@ -8,10 +8,11 @@
 
   <link rel="stylesheet" href="{{ "/assets/style.css" | absolute_url }}">
   <link rel="mask-icon" href="{{ "/assets/favicon.svg" | absolute_url }}" color="#E15C60">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ "/assets/apple-touch-icon-precomposed.png" | absolute_url }}">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="{{ "/assets/apple-touch-icon-precomposed.png" | absolute_url }}">
   <link rel="shortcut icon" href="{{ "/assets/favicon.ico" | prepend: full_base_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}">
+  <link rel="alternate" type="application/json" title="{{ site.title }}" href="{{ "/feed.json" | absolute_url }}">
+  <link rel="alternate" type="application/xml+rss" title="{{ site.title }}" href="{{ "/feed.xml" | absolute_url }}"">
 
 <!-- Twitter card -->
   <meta name="twitter:card" content="summary">

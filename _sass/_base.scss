@@ -2,8 +2,51 @@
   * Reset some basic elements
 */
 @font-face {
-  font-family: "Serif-UI-Text-Regular";
-  src: url("/assets/sf_serif/Serif-UI-Text-Regular.otf");
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-regular-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorkmedium-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-regularitalic-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorkmedium-regularitalic-webfont.woff2") format('woff2');
+  font-weight:normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NewYorkMedium';
+  src: url("/assets/fonts/newyorkmedium-bold-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorkmedium-bold-webfont.woff2") format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-regular-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorklarge-regular-webfont.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-regularitalic-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorklarge-regularitalic-webfont.woff2") format('woff2');
+  font-weight:normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'NewYorkLarge';
+  src: url("/assets/fonts/newyorklarge-bold-webfont.woff") format('woff'),
+       url("/assets/fonts/newyorklarge-bold-webfont.woff2") format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: light) {
@@ -40,6 +83,7 @@ p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
+    font-family: NewYork;
 }
 
 
@@ -51,6 +95,8 @@ dl, dd, ol, ul, figure {
 body {
     font-family: $body-font-family;
     font-size: $body-font-size;
+    font-style: normal;
+    font-weight: normal;
     line-height: 1.5;
   /*  color: var(--text-color);
     background-color: var(--page-background-color); */
@@ -67,6 +113,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
   margin-bottom: 0.25em;
+  font-family: $header-font-family
 }
 
 h1, .h1 { font-size: $h1-size; }
